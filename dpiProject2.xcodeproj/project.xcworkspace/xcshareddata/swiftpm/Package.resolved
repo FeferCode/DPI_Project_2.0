@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "dpicalculations",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:FeferCode/DPICalculations.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1313e15ef30722c11ea8ec3aac078a20738d652c"
+      }
+    }
+  ],
+  "version" : 2
+}
