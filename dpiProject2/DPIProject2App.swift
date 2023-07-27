@@ -4,10 +4,7 @@
 //
 //  Created by Jakub Majewski on 18/07/2023.
 //
-//HomeView()
-//CalculationView()
-//HistoryView()
-//AboutView()
+
 
 import SwiftUI
 
@@ -19,5 +16,3 @@ struct DPIProject2App: App {
         }
     }
 }
-
-
