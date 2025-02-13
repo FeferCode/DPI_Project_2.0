@@ -1,0 +1,14 @@
+strings:
+  inputs: Localizable/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: Generated/DPIStrings.swift
+      enumName: DPIStringsProvider
+xcassets:
+  inputs:
+    - Images.xcassets
+    - Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: Generated/DPIAssets.swift
+      enumName: DPIAssetsProvider

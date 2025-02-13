@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		603046642D5BA4F6009B5AE0 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 603046632D5BA4EE009B5AE0 /* swiftgen.yml */; };
 		603D49382A72766700BA88D3 /* TabBarItemColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D49372A72766700BA88D3 /* TabBarItemColorModifier.swift */; };
 		603D493A2A72768F00BA88D3 /* TabBarColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D49392A72768F00BA88D3 /* TabBarColorModifier.swift */; };
 		603D493C2A72770500BA88D3 /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D493B2A72770500BA88D3 /* CustomTabItem.swift */; };
 		603D49412A72907B00BA88D3 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D49402A72907B00BA88D3 /* CustomTabBarView.swift */; };
 		603D49432A72A82C00BA88D3 /* CorrectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D49422A72A82C00BA88D3 /* CorrectButton.swift */; };
+		603EF06A2D5B9B72006C15E4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603EF0692D5B9B72006C15E4 /* Colors.xcassets */; };
 		6045D8F52A69501300782914 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045D8F42A69501300782914 /* MainTabView.swift */; };
 		6045D8F82A69586D00782914 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6045D8FA2A69586D00782914 /* Localizable.strings */; };
 		6045D8FE2A696CEA00782914 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045D8FD2A696CEA00782914 /* HomeView.swift */; };
@@ -20,18 +22,21 @@
 		6045D9042A696D1D00782914 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045D9032A696D1D00782914 /* AboutView.swift */; };
 		6045D9082A697E9E00782914 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6045D9072A697E9E00782914 /* TestView.swift */; };
 		605288482A6AC88A0046D829 /* MainTabbedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605288472A6AC88A0046D829 /* MainTabbedItems.swift */; };
+		6075A4102D5C921500F80812 /* DPIAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075A40E2D5C921500F80812 /* DPIAssets.swift */; };
+		6075A4112D5C921500F80812 /* DPIStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075A40F2D5C921500F80812 /* DPIStrings.swift */; };
 		60AE81522A66D5E6000E992F /* DPIProject2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE81512A66D5E6000E992F /* DPIProject2App.swift */; };
-		60AE81562A66D5E7000E992F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AE81552A66D5E7000E992F /* Assets.xcassets */; };
-		60AE81592A66D5E7000E992F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AE81582A66D5E7000E992F /* Preview Assets.xcassets */; };
+		60AE81562A66D5E7000E992F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AE81552A66D5E7000E992F /* Images.xcassets */; };
 		60AE81612A66DCBE000E992F /* DPICalculations in Frameworks */ = {isa = PBXBuildFile; productRef = 60AE81602A66DCBE000E992F /* DPICalculations */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		603046632D5BA4EE009B5AE0 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		603D49372A72766700BA88D3 /* TabBarItemColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemColorModifier.swift; sourceTree = "<group>"; };
 		603D49392A72768F00BA88D3 /* TabBarColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarColorModifier.swift; sourceTree = "<group>"; };
 		603D493B2A72770500BA88D3 /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
 		603D49402A72907B00BA88D3 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		603D49422A72A82C00BA88D3 /* CorrectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectButton.swift; sourceTree = "<group>"; };
+		603EF0692D5B9B72006C15E4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		6045D8F42A69501300782914 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		6045D8F92A69586D00782914 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6045D8FB2A69587200782914 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -41,10 +46,11 @@
 		6045D9032A696D1D00782914 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		6045D9072A697E9E00782914 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		605288472A6AC88A0046D829 /* MainTabbedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedItems.swift; sourceTree = "<group>"; };
+		6075A40E2D5C921500F80812 /* DPIAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPIAssets.swift; sourceTree = "<group>"; };
+		6075A40F2D5C921500F80812 /* DPIStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPIStrings.swift; sourceTree = "<group>"; };
 		60AE814E2A66D5E6000E992F /* dpiProject2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dpiProject2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AE81512A66D5E6000E992F /* DPIProject2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPIProject2App.swift; sourceTree = "<group>"; };
-		60AE81552A66D5E7000E992F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		60AE81582A66D5E7000E992F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60AE81552A66D5E7000E992F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		603046652D5BA612009B5AE0 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				6045D8FA2A69586D00782914 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 		603D492D2A72708E00BA88D3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +145,36 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		603EF0612D5A8EE3006C15E4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		603EF0622D5A8EF2006C15E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		603EF0632D5A8F04006C15E4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		603EF0662D5B9A58006C15E4 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				6075A40E2D5C921500F80812 /* DPIAssets.swift */,
+				6075A40F2D5C921500F80812 /* DPIStrings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		6045D8F32A69442A00782914 /* TestViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,20 +184,16 @@
 			path = TestViews;
 			sourceTree = "<group>";
 		};
-		6045D8FC2A6958A700782914 /* Assets */ = {
+		6045D8FC2A6958A700782914 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6045D8FA2A69586D00782914 /* Localizable.strings */,
-				60AE81552A66D5E7000E992F /* Assets.xcassets */,
+				603046652D5BA612009B5AE0 /* Localizable */,
+				603046632D5BA4EE009B5AE0 /* swiftgen.yml */,
+				603EF0662D5B9A58006C15E4 /* Generated */,
+				60AE81552A66D5E7000E992F /* Images.xcassets */,
+				603EF0692D5B9B72006C15E4 /* Colors.xcassets */,
 			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		6045D9052A696FCB00782914 /* Tabs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tabs;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		6045D9062A697E8300782914 /* Shared */ = {
@@ -183,23 +223,16 @@
 		60AE81502A66D5E6000E992F /* dpiProject2 */ = {
 			isa = PBXGroup;
 			children = (
+				60AE81512A66D5E6000E992F /* DPIProject2App.swift */,
+				603D49342A72737800BA88D3 /* Features */,
+				603EF0612D5A8EE3006C15E4 /* Coordinators */,
+				603EF0622D5A8EF2006C15E4 /* Services */,
 				6045D8F32A69442A00782914 /* TestViews */,
 				6045D9062A697E8300782914 /* Shared */,
-				6045D8FC2A6958A700782914 /* Assets */,
-				60AE81572A66D5E7000E992F /* Preview Content */,
-				6045D9052A696FCB00782914 /* Tabs */,
-				603D49342A72737800BA88D3 /* Features */,
-				60AE81512A66D5E6000E992F /* DPIProject2App.swift */,
+				603EF0632D5A8F04006C15E4 /* Utilities */,
+				6045D8FC2A6958A700782914 /* Resources */,
 			);
 			path = dpiProject2;
-			sourceTree = "<group>";
-		};
-		60AE81572A66D5E7000E992F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				60AE81582A66D5E7000E992F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +245,7 @@
 				60AE814A2A66D5E6000E992F /* Sources */,
 				60AE814B2A66D5E6000E992F /* Frameworks */,
 				60AE814C2A66D5E6000E992F /* Resources */,
+				603EF06D2D5BA174006C15E4 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -233,7 +267,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					60AE814D2A66D5E6000E992F = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -267,13 +301,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60AE81592A66D5E7000E992F /* Preview Assets.xcassets in Resources */,
+				603EF06A2D5B9B72006C15E4 /* Colors.xcassets in Resources */,
+				603046642D5BA4F6009B5AE0 /* swiftgen.yml in Resources */,
 				6045D8F82A69586D00782914 /* Localizable.strings in Resources */,
-				60AE81562A66D5E7000E992F /* Assets.xcassets in Resources */,
+				60AE81562A66D5E7000E992F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		603EF06D2D5BA174006C15E4 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60AE814A2A66D5E6000E992F /* Sources */ = {
@@ -286,6 +342,8 @@
 				603D49412A72907B00BA88D3 /* CustomTabBarView.swift in Sources */,
 				6045D9082A697E9E00782914 /* TestView.swift in Sources */,
 				6045D8FE2A696CEA00782914 /* HomeView.swift in Sources */,
+				6075A4102D5C921500F80812 /* DPIAssets.swift in Sources */,
+				6075A4112D5C921500F80812 /* DPIStrings.swift in Sources */,
 				6045D9002A696CFD00782914 /* CalculationView.swift in Sources */,
 				603D49432A72A82C00BA88D3 /* CorrectButton.swift in Sources */,
 				603D493A2A72768F00BA88D3 /* TabBarColorModifier.swift in Sources */,
@@ -315,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -347,6 +406,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -375,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -407,6 +468,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -432,7 +494,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"dpiProject2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 925758Y7C6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -461,7 +523,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"dpiProject2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 925758Y7C6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

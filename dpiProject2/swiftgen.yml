@@ -1,0 +1,17 @@
+strings:
+  paths: 
+    - en.lproj/Localizable.strings
+    - pl.lproj/Localizable.strings
+  templateName: structured-swift5
+  enumName: DPILocalizableProvider
+  output: Generated/Strings+Generated.swift
+xcassets:
+  paths: 
+    - Assets.xcassets
+    - Colors.xcassets
+  enumName: DPIAssetsProvider
+  templateName: swift5
+  output: Generated/XCAssets+Generated.swift
+
+
+

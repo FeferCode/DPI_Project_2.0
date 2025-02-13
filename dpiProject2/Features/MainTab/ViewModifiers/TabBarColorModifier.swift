@@ -1,10 +1,3 @@
-//
-//  TabBarColorModifier.swift
-//  dpiProject2
-//
-//  Created by Jakub Majewski on 27/07/2023.
-//
-
 import Foundation
 import SwiftUI
 
