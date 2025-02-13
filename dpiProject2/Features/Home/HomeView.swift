@@ -1,14 +1,6 @@
-//
-//  HomeView.swift
-//  dpiProject2
-//
-//  Created by Jakub Majewski on 20/07/2023.
-//
-
 import SwiftUI
 
 struct HomeView: View {
-    @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
         ZStack {
@@ -48,7 +40,20 @@ struct HomeView: View {
                 }
                 .listRowBackground(Color.clear)
 
-            }
+            }.homeViewStyle()
+        }
+    }
+}
+
+extension View {
+    func homeViewStyle() -> some View {
+        self.modifier(HomeViewModifier())
+    }
+}
+
+struct HomeViewModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
             .scrollContentBackground(.hidden)
             .background(.purple.opacity(0.4)).blur(radius: 0.2)
             .listStyle(GroupedListStyle())
@@ -58,7 +63,6 @@ struct HomeView: View {
             .padding(.bottom, 35)
             .foregroundColor(.white)
             .bold()
-        }
     }
 }
 

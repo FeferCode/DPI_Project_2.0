@@ -1,18 +1,11 @@
-//
-//  MainTabbedItems.swift
-//  dpiProject2
-//
-//  Created by Jakub Majewski on 21/07/2023.
-//
-
 import Foundation
 import SwiftUI
 
 enum MainTabbedItems: Int, CaseIterable {
     case home = 0
-    case calculations
-    case history
-    case info
+    case calculations = 1
+    case history = 2
+    case info = 3
 
     var title: String {
         switch self {
@@ -51,6 +44,5 @@ enum MainTabbedItems: Int, CaseIterable {
         case .info:
             return .blue
         }
-
     }
 }
