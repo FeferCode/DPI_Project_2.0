@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomTabBarView: View {
+struct MainTabBarView: View {
     @Binding var selectedTab: Int
 
     var body: some View {
@@ -17,7 +17,7 @@ struct CustomTabBarView: View {
                     Button {
                         selectedTab = item.rawValue
                     } label: {
-                        CustomTabItem(imageName: item.iconName,
+                        MainTabBarItem(imageName: item.iconName,
                                       title: item.title,
                                       isActive: (selectedTab == item.rawValue),
                                       selectedTab: selectedTab)
@@ -36,6 +36,6 @@ struct CustomTabBarView: View {
 
 struct CustomTabBarView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTabBarView(selectedTab: .constant(0))
+        MainTabBarView(selectedTab: .constant(0))
     }
 }

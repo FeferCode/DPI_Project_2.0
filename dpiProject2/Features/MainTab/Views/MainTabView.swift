@@ -23,7 +23,7 @@ struct MainTabView: View {
                         .tag(3)
                 }
 
-                CustomTabBarView(selectedTab: $selectedTab)
+                MainTabBarView(selectedTab: $selectedTab)
                 .onReceive(keyboardPublisher) { value in
                     isKeyboardPresented = value
                   }
