@@ -3,7 +3,8 @@ strings:
   outputs:
     - templateName: structured-swift5
       output: Generated/DPIStrings.swift
-      enumName: DPIStringsProvider
+      params:
+        enumName: PPIStringsProvider
 xcassets:
   inputs:
     - Images.xcassets
@@ -11,4 +12,5 @@ xcassets:
   outputs:
     - templateName: swift5
       output: Generated/DPIAssets.swift
-      enumName: DPIAssetsProvider
+      params:
+        enumName: PPIAssetsProvider

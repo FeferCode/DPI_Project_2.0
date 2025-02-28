@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainTabBarItem: View {
+struct MainTabBarViewItem: View {
     var imageName: String
     var title: String
     var isActive: Bool
@@ -37,7 +37,7 @@ struct MainTabBarItem: View {
 
 struct CustomTabItem_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabBarItem(imageName: MainTabbedItems.home.iconName,
+        MainTabBarViewItem(imageName: MainTabbedItems.home.iconName,
                       title: MainTabbedItems.home.title,
                       isActive: true,
                       selectedTab: 0)
