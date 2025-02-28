@@ -17,7 +17,7 @@ struct MainTabBarView: View {
                     Button {
                         selectedTab = item.rawValue
                     } label: {
-                        MainTabBarItem(imageName: item.iconName,
+                        MainTabBarViewItem(imageName: item.iconName,
                                       title: item.title,
                                       isActive: (selectedTab == item.rawValue),
                                       selectedTab: selectedTab)

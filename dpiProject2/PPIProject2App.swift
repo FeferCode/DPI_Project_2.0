@@ -9,10 +9,11 @@
 import SwiftUI
 
 @main
-struct DPIProject2App: App {
+struct PPIProject2App: App {
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            let coordinator = TabAppCoordinator()
+            coordinator.start()
         }
     }
 }
