@@ -1,4 +1,5 @@
 {
+  "originHash" : "6f76b24bcf7fdd670c4053aec574e01d58a15158eb2445fd6ff603ce844a8375",
   "pins" : [
     {
       "identity" : "dpicalculations",
@@ -10,5 +11,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

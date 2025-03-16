@@ -1,4 +1,3 @@
-import Foundation
 import SwiftUI
 
 struct TabBarColorModifier: ViewModifier {
@@ -7,7 +6,7 @@ struct TabBarColorModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .background((MainTabbedItems(rawValue: selectedTab)?.bottomBarColor ?? .green).opacity(opacity))
+            .background((MainTabItems(rawValue: selectedTab)?.bottomBarColor ?? .green).opacity(opacity))
     }
 }
 

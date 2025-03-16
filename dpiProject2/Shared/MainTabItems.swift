@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-enum MainTabbedItems: Int, CaseIterable {
+enum MainTabItems: Int, CaseIterable {
     case home = 0
     case calculations = 1
     case history = 2
