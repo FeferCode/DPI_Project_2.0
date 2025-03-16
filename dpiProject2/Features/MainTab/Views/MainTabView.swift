@@ -2,41 +2,33 @@ import SwiftUI
 import Combine
 
 struct MainTabView: View {
-    
     @ObservedObject var viewModel: MainTabViewModel
-    
-    @ObservedObject var homeCoordinator = HomeTabCoordinator()
-//    @ObservedObject var calculationCoordinator = CalculationCoordinator()
-//    @ObservedObject var historyCoordinator = HistoryCoordinator()
-//    @ObservedObject var aboutCoordinator = AboutCoordinator()
-    
-    @State private var selectedTab = 0
+    @ObservedObject var tabCoordinator = MainTabCoordinator()
+
     @State private var isKeyboardPresented = false
 
     var body: some View {
-        ZStack {
-            ZStack(alignment: .bottom) {
-                TabView(selection: $selectedTab) {
-                    HomeView(viewModel: HomeViewModel(coordinator: homeCoordinator))
-                        .tag(0)
+        ZStack(alignment: .bottom) {
+            TabView(selection: $tabCoordinator.activeTab) {
+                tabCoordinator.homeTabView
+                    .tag(MainTabItems.home)
 
-                    CalculationView()
-                        .tag(1)
+                CalculationView()
+                    .tag(MainTabItems.calculations)
 
-                    HistoryView()
-                        .tag(2)
+                HistoryView()
+                    .tag(MainTabItems.history)
 
-                    AboutView()
-                        .tag(3)
-                }
+                AboutView()
+                    .tag(MainTabItems.info)
+            }
 
-                MainTabBarView(selectedTab: $selectedTab)
+            MainTabBarView(selectedTab: $tabCoordinator.activeTab)
                 .onReceive(keyboardPublisher) { value in
                     isKeyboardPresented = value
                   }
             }
         }
-    }
 }
 
 #Preview {

@@ -1,12 +1,3 @@
-//
-//  SomeView.swift
-//  dpiProject2
-//
-//  Created by Jakub Majewski on 20/07/2023.
-//
-
-import SwiftUI
-
 import SwiftUI
 
 struct TestView: View {

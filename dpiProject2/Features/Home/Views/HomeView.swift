@@ -3,7 +3,8 @@ import SwiftUI
 struct HomeView: View {
 
     @ObservedObject var viewModel: HomeViewModel
-    
+//    @StateObject private var viewModel: HomeViewModel
+
     var body: some View {
         ZStack {
             LinearGradient(
@@ -43,6 +44,7 @@ struct HomeView: View {
                 .listRowBackground(Color.clear)
 
             }.homeViewStyle()
-        }.applyNavigation(coordinator: viewModel.coordinator)
+        }
+//        .applyNavigation(coordinator: viewModel.coordinator)
     }
 }

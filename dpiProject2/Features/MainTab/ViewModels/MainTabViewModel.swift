@@ -2,9 +2,9 @@ import SwiftUI
 
 final class MainTabViewModel: Identifiable, ObservableObject {
     let id = UUID()
-    var coordinator: TabAppCoordinator
+    var coordinator: MainTabCoordinator
     
-    init(coordinator: TabAppCoordinator) {
+    init(coordinator: MainTabCoordinator) {
         self.coordinator = coordinator
     }
 }

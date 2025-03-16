@@ -1,19 +1,17 @@
-//
-//  DPIProject2App.swift
-//  DPIProject2
-//
-//  Created by Jakub Majewski on 18/07/2023.
-//
-
-
 import SwiftUI
 
 @main
 struct PPIProject2App: App {
+
+    @StateObject var appCoordinator = AppCoordinator()
+
+    private var mainTabCoordinator: MainTabCoordinator {
+        appCoordinator.mainTabCoordinator
+    }
+
     var body: some Scene {
         WindowGroup {
-            let coordinator = TabAppCoordinator()
-            coordinator.start()
+            mainTabCoordinator.rootView
         }
     }
 }

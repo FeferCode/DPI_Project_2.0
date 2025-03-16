@@ -1,10 +1,3 @@
-//
-//  CustomTabItem.swift
-//  dpiProject2
-//
-//  Created by Jakub Majewski on 27/07/2023.
-//
-
 import SwiftUI
 
 struct MainTabBarViewItem: View {
@@ -37,8 +30,8 @@ struct MainTabBarViewItem: View {
 
 struct CustomTabItem_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabBarViewItem(imageName: MainTabbedItems.home.iconName,
-                      title: MainTabbedItems.home.title,
+        MainTabBarViewItem(imageName: MainTabItems.home.iconName,
+                      title: MainTabItems.home.title,
                       isActive: true,
                       selectedTab: 0)
     }

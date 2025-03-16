@@ -1,41 +1,29 @@
-//
-//  CustomTabBarView.swift
-//  dpiProject2
-//
-//  Created by Jakub Majewski on 27/07/2023.
-//
-
 import SwiftUI
 
 struct MainTabBarView: View {
-    @Binding var selectedTab: Int
+    @Binding var selectedTab: MainTabItems
 
     var body: some View {
         ZStack {
             HStack {
-                ForEach(MainTabbedItems.allCases, id: \.self) { item in
+                ForEach(MainTabItems.allCases, id: \.self) { item in
                     Button {
-                        selectedTab = item.rawValue
+                        selectedTab = item
                     } label: {
                         MainTabBarViewItem(imageName: item.iconName,
                                       title: item.title,
-                                      isActive: (selectedTab == item.rawValue),
-                                      selectedTab: selectedTab)
+                                      isActive: (selectedTab == item),
+                                           selectedTab: selectedTab.rawValue)
                                 }
                 }
             }
             .padding(6)
         }
-        .frame(height: 70)
-        .tabBarColorModifier(selectedTab: selectedTab, opacity: 0.3)
-        .animation(.easeInOut(duration: 0.5), value: 0)
-        .cornerRadius(35)
-        .padding(.horizontal, 26)
+        .tabBarViewModifier(selectedTab: selectedTab.rawValue)
     }
 }
 
-struct CustomTabBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabBarView(selectedTab: .constant(0))
-    }
+#Preview {
+    @State var selectedTab: MainTabItems = .home
+    MainTabBarView(selectedTab: $selectedTab)
 }
