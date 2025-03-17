@@ -3,7 +3,7 @@ import Combine
 
 struct MainTabView: View {
     @ObservedObject var viewModel: MainTabViewModel
-    @ObservedObject var tabCoordinator = MainTabCoordinator()
+    @ObservedObject var tabCoordinator: MainTabCoordinator
 
     @State private var isKeyboardPresented = false
 
@@ -31,6 +31,8 @@ struct MainTabView: View {
         }
 }
 
-#Preview {
-//    MainTabView(viewModel: )
-}
+//#Preview {
+//    @PreviewValue
+//    var ViewModel: MainTabViewModel.self = .init(coordinator: .init())
+//    MainTabView(viewModel: ViewModel()
+//}

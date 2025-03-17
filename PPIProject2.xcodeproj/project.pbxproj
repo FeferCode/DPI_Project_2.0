@@ -30,6 +30,12 @@
 		605288482A6AC88A0046D829 /* MainTabItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605288472A6AC88A0046D829 /* MainTabItems.swift */; };
 		6075A4102D5C921500F80812 /* DPIAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075A40E2D5C921500F80812 /* DPIAssets.swift */; };
 		6075A4112D5C921500F80812 /* DPIStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075A40F2D5C921500F80812 /* DPIStrings.swift */; };
+		60963D9B2D883CDB00BE61CA /* CalculationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60963D9A2D883CDB00BE61CA /* CalculationCoordinator.swift */; };
+		60963D9D2D883E9B00BE61CA /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60963D9C2D883E9B00BE61CA /* HistoryCoordinator.swift */; };
+		60963D9F2D883EA900BE61CA /* AboutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60963D9E2D883EA900BE61CA /* AboutCoordinator.swift */; };
+		60963DA12D8859AB00BE61CA /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60963DA02D8859AB00BE61CA /* CalculatorViewModel.swift */; };
+		60963DA42D88678600BE61CA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60963DA32D88678600BE61CA /* SettingsView.swift */; };
+		60963DA62D886EAF00BE61CA /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60963DA52D886EAF00BE61CA /* SettingsCoordinator.swift */; };
 		60A87BFD2D876B2A00129502 /* NavigatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A87BFC2D876B2A00129502 /* NavigatingView.swift */; };
 		60A87BFF2D876F9C00129502 /* NavigationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A87BFE2D876F9C00129502 /* NavigationType.swift */; };
 		60A87C012D8773ED00129502 /* Sequence+FirstOfType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A87C002D8773ED00129502 /* Sequence+FirstOfType.swift */; };
@@ -70,6 +76,12 @@
 		605288472A6AC88A0046D829 /* MainTabItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabItems.swift; sourceTree = "<group>"; };
 		6075A40E2D5C921500F80812 /* DPIAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPIAssets.swift; sourceTree = "<group>"; };
 		6075A40F2D5C921500F80812 /* DPIStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPIStrings.swift; sourceTree = "<group>"; };
+		60963D9A2D883CDB00BE61CA /* CalculationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationCoordinator.swift; sourceTree = "<group>"; };
+		60963D9C2D883E9B00BE61CA /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
+		60963D9E2D883EA900BE61CA /* AboutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCoordinator.swift; sourceTree = "<group>"; };
+		60963DA02D8859AB00BE61CA /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		60963DA32D88678600BE61CA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		60963DA52D886EAF00BE61CA /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		60A87BFC2D876B2A00129502 /* NavigatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatingView.swift; sourceTree = "<group>"; };
 		60A87BFE2D876F9C00129502 /* NavigationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationType.swift; sourceTree = "<group>"; };
 		60A87C002D8773ED00129502 /* Sequence+FirstOfType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+FirstOfType.swift"; sourceTree = "<group>"; };
@@ -146,6 +158,7 @@
 		600BED152D5E7C0C009187E5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				60963DA02D8859AB00BE61CA /* CalculatorViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -233,6 +246,7 @@
 				603D493D2A7277A800BA88D3 /* Calculation */,
 				603D493E2A727A3700BA88D3 /* History */,
 				603D493F2A727A3E00BA88D3 /* About */,
+				60963DA22D885AB800BE61CA /* Settings */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -287,10 +301,14 @@
 		603EF0612D5A8EE3006C15E4 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				60E0CD8C2D64C09900B4DBC6 /* Navigation */,
 				601BC8F42D725D0700AB5122 /* AppCoordinator.swift */,
 				60E0CD8D2D64C11C00B4DBC6 /* MainTabCoordinator.swift */,
 				60E0CD8F2D6505A800B4DBC6 /* HomeCoordinator.swift */,
-				60E0CD8C2D64C09900B4DBC6 /* Navigation */,
+				60963D9A2D883CDB00BE61CA /* CalculationCoordinator.swift */,
+				60963D9C2D883E9B00BE61CA /* HistoryCoordinator.swift */,
+				60963D9E2D883EA900BE61CA /* AboutCoordinator.swift */,
+				60963DA52D886EAF00BE61CA /* SettingsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -348,6 +366,14 @@
 				605288472A6AC88A0046D829 /* MainTabItems.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		60963DA22D885AB800BE61CA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				60963DA32D88678600BE61CA /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		60AE81452A66D5E6000E992F = {
@@ -504,16 +530,21 @@
 				603D49412A72907B00BA88D3 /* MainTabBarView.swift in Sources */,
 				60A87BFF2D876F9C00129502 /* NavigationType.swift in Sources */,
 				600BED1D2D5E934C009187E5 /* Coordinator.swift in Sources */,
+				60963DA62D886EAF00BE61CA /* SettingsCoordinator.swift in Sources */,
 				6045D9082A697E9E00782914 /* TestView.swift in Sources */,
 				603AB7B62D87560800E9417B /* CompositionCoordinator.swift in Sources */,
+				60963D9B2D883CDB00BE61CA /* CalculationCoordinator.swift in Sources */,
 				603AB7B82D87564D00E9417B /* FlowCoordinator.swift in Sources */,
+				60963D9F2D883EA900BE61CA /* AboutCoordinator.swift in Sources */,
 				60A87BFD2D876B2A00129502 /* NavigatingView.swift in Sources */,
+				60963DA12D8859AB00BE61CA /* CalculatorViewModel.swift in Sources */,
 				6045D8FE2A696CEA00782914 /* HomeView.swift in Sources */,
 				60E0CD8E2D64C12800B4DBC6 /* MainTabCoordinator.swift in Sources */,
 				6075A4102D5C921500F80812 /* DPIAssets.swift in Sources */,
 				6075A4112D5C921500F80812 /* DPIStrings.swift in Sources */,
 				60E0CD8B2D64BD6400B4DBC6 /* Route.swift in Sources */,
 				6045D9002A696CFD00782914 /* CalculationView.swift in Sources */,
+				60963DA42D88678600BE61CA /* SettingsView.swift in Sources */,
 				601BC8F52D725D2000AB5122 /* AppCoordinator.swift in Sources */,
 				603D49432A72A82C00BA88D3 /* CorrectButton.swift in Sources */,
 				60E0CD982D65289A00B4DBC6 /* HomeViewModifier.swift in Sources */,
@@ -527,6 +558,7 @@
 				60E0CD902D6505BD00B4DBC6 /* HomeCoordinator.swift in Sources */,
 				60E0CD962D6524BC00B4DBC6 /* NavigationSetupModifier.swift in Sources */,
 				60E0CD942D6511F500B4DBC6 /* MainTabViewModel.swift in Sources */,
+				60963D9D2D883E9B00BE61CA /* HistoryCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

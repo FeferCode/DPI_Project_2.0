@@ -103,7 +103,7 @@ extension HistoryRoute: Identifiable {
 }
 
 // MARK: - Info Route
-enum InfoRoute: Routable {
+enum AboutRoute: Routable {
     case info
 
     var navigationType: NavigationType {

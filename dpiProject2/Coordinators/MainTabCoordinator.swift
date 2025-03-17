@@ -13,25 +13,28 @@ final class MainTabCoordinator: CompositionCoordinator {
     var childCoordinators = [any Coordinator]()
     var finishDelegate: (any CoordinatorFinishDelegate)?
 
-    let homeCoordinator = HomeCoordinator()
-
     @Published var activeTab = MainTabItems.home
 
     func start() {
         let homeCoordinator = HomeCoordinator()
-//        let calculatorCoordinator = CalculatorCoordinator()
-//        let settingsCoordinator = SettingsCoordinator()
-//        let historyCoordinator = HistoryCoordinator()
+        let calculatorCoordinator = CalculatorCoordinator()
+        let settingsCoordinator = SettingsCoordinator()
+        let historyCoordinator = HistoryCoordinator()
+        let aboutCoordinator = AboutCoordinator()
 
-        [homeCoordinator
-//         calculatorCoordinator,
-//         settingsCoordinator,
-//         historyCoordinator
+        [homeCoordinator,
+         calculatorCoordinator,
+         settingsCoordinator,
+         historyCoordinator,
+         aboutCoordinator
         ].forEach {
-            childCoordinators.append($0)
+            if let coordinator = $0 as? any Coordinator {
+                childCoordinators.append(coordinator)
+            }
         }
     }
 
+    // MARK: - RootViews
     var rootView: some View {
         MainTabView(viewModel: MainTabViewModel(coordinator: self),
                     tabCoordinator: self)
@@ -40,6 +43,26 @@ final class MainTabCoordinator: CompositionCoordinator {
     @MainActor
     var homeTabView: some View {
         childCoordinators.first(as: HomeCoordinator.self)?.rootView
+    }
+
+    @MainActor
+    var calculatorTabView: some View {
+        childCoordinators.first(as: CalculatorCoordinator.self)?.rootView
+    }
+
+    @MainActor
+    var historyTabView: some View {
+        childCoordinators.first(as: HistoryCoordinator.self)?.rootView
+    }
+
+    @MainActor
+    var aboutTabView: some View {
+        childCoordinators.first(as: AboutCoordinator.self)?.rootView
+    }
+
+    @MainActor
+    var settingsView: some View {
+        childCoordinators.first(as: SettingsCoordinator.self)?.rootView
     }
 
     deinit {
@@ -51,9 +74,11 @@ final class MainTabCoordinator: CompositionCoordinator {
     }
 
     func dismissAll() {
-//        childCoordinators.forEach { coordinator in
-////            coordinator.dismissToRoot()
-//            coordinator.popToRoot()
-//        }
+        childCoordinators.forEach { coordinator in
+            if let flowCoordinator = coordinator as? (any FlowCoordinator) {
+                flowCoordinator.dismissToRoot()
+                flowCoordinator.popToRoot()
+            }
+        }
     }
 }
