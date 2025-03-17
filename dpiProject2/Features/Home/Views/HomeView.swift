@@ -8,7 +8,7 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             LinearGradient(
-                colors: [.purple.opacity(0.25), .purple.opacity(0.75)],
+                colors: [MainTabItems.home.selectedColor.opacity(0.25), MainTabItems.home.selectedColor.opacity(0.75)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )

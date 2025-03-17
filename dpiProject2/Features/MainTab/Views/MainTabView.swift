@@ -8,31 +8,54 @@ struct MainTabView: View {
     @State private var isKeyboardPresented = false
 
     var body: some View {
-        ZStack(alignment: .bottom) {
-            TabView(selection: $tabCoordinator.activeTab) {
-                tabCoordinator.homeTabView
-                    .tag(MainTabItems.home)
+        NavigationStack {
+            ZStack(alignment: .bottom) {
+                TabView(selection: $tabCoordinator.activeTab) {
+                    tabCoordinator.homeTabView
+                        .tag(MainTabItems.home)
 
-                CalculationView()
-                    .tag(MainTabItems.calculations)
+                    tabCoordinator.calculatorTabView
+                        .tag(MainTabItems.calculations)
 
-                HistoryView()
-                    .tag(MainTabItems.history)
+                    tabCoordinator.historyTabView
+                        .tag(MainTabItems.history)
 
-                AboutView()
-                    .tag(MainTabItems.info)
-            }
+                    tabCoordinator.aboutTabView
+                        .tag(MainTabItems.about)
+                }.navigationBarItems(leading: Button {
+                    print("Button tapped")
+                    tabCoordinator.presentSettings()
 
-            MainTabBarView(selectedTab: $tabCoordinator.activeTab)
-                .onReceive(keyboardPublisher) { value in
-                    isKeyboardPresented = value
-                  }
+                    }label: {
+                        Image(systemName: "text.justify")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 30, height: 20)
+                            .clipShape(Rectangle())
+                            .overlay(
+                                Rectangle().stroke(Color.white, lineWidth: 2)
+                                    .cornerRadius(5)
+                            )
+                            .shadow(radius: 2)
+                            .foregroundColor(.white)
+                    })
+
+                MainTabBarView(selectedTab: $tabCoordinator.activeTab)
+                    .onReceive(keyboardPublisher) { value in
+                        isKeyboardPresented = value
+                    }
             }
         }
+    }
+
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
 }
 
-//#Preview {
-//    @PreviewValue
-//    var ViewModel: MainTabViewModel.self = .init(coordinator: .init())
-//    MainTabView(viewModel: ViewModel()
-//}
+#Preview {
+    let coordinator = MainTabCoordinator()
+    let viewModel = MainTabViewModel(coordinator: coordinator)
+    MainTabView(viewModel: viewModel,
+                tabCoordinator: coordinator)
+}

@@ -5,7 +5,7 @@ enum MainTabItems: Int, CaseIterable {
     case home = 0
     case calculations = 1
     case history = 2
-    case info = 3
+    case about = 3
 
     var title: String {
         switch self {
@@ -15,7 +15,7 @@ enum MainTabItems: Int, CaseIterable {
             return "Calculator"
         case .history:
             return "History"
-        case .info:
+        case .about:
             return "Info"
         }
     }
@@ -28,12 +28,12 @@ enum MainTabItems: Int, CaseIterable {
                 return "arrow.up.left.and.arrow.down.right"
             case .history:
                 return "clock"
-            case .info:
+            case .about:
                 return "info.circle"
         }
     }
 
-    var bottomBarColor: Color {
+    var selectedColor: Color {
         switch self {
         case .home:
             return .purple
@@ -41,7 +41,7 @@ enum MainTabItems: Int, CaseIterable {
             return .indigo
         case .history:
             return .orange
-        case .info:
+        case .about:
             return .blue
         }
     }

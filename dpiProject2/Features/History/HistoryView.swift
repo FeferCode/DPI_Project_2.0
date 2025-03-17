@@ -4,7 +4,7 @@ struct HistoryView: View {
     var body: some View {
         ZStack {
             LinearGradient(
-                colors: [.orange.opacity(0.25), .orange.opacity(0.75)],
+                colors: [MainTabItems.history.selectedColor.opacity(0.25), MainTabItems.history.selectedColor.opacity(0.75)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
