@@ -5,7 +5,7 @@ struct AboutView: View {
         ZStack {
             Text("Hello, AboutView!")
             LinearGradient(
-                colors: [.blue.opacity(0.25), .blue.opacity(0.75)],
+                colors: [MainTabItems.about.selectedColor.opacity(0.25), MainTabItems.about.selectedColor.opacity(0.75)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             ).ignoresSafeArea()

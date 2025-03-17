@@ -37,7 +37,7 @@ final class HomeCoordinator: FlowCoordinator {
     }
 
     func presentChild() {
-//        present(child: ChildCoordinator())
+        present(child: SettingsCoordinator())
     }
 
     deinit {

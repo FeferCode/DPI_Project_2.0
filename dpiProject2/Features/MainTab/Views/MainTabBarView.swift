@@ -24,6 +24,6 @@ struct MainTabBarView: View {
 }
 
 #Preview {
-    @State var selectedTab: MainTabItems = .home
+    @Previewable @State var selectedTab: MainTabItems = .home
     MainTabBarView(selectedTab: $selectedTab)
 }

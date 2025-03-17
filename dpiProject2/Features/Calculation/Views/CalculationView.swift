@@ -13,7 +13,8 @@ struct CalculationView: View {
         ZStack {
 
             LinearGradient(
-                colors: [.indigo.opacity(0.25), .indigo.opacity(0.75)],
+                colors: [MainTabItems.calculations.selectedColor.opacity(0.25),
+                         MainTabItems.calculations.selectedColor.opacity(0.75)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             ).ignoresSafeArea()

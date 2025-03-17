@@ -7,7 +7,7 @@ struct TabBarItemColorModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .background(isActive ? (MainTabItems(rawValue: selectedTab)?.bottomBarColor ?? .green).opacity(opacity) : .clear)
+            .background(isActive ? (MainTabItems(rawValue: selectedTab)?.selectedColor ?? .green).opacity(opacity) : .clear)
     }
 }
 

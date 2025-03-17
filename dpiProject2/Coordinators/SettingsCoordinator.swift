@@ -27,8 +27,20 @@ final class SettingsCoordinator: FlowCoordinator {
         .environmentObject(self)
     }
 
+    func pushNextScreen() {
+//        push(route: .pushed)
+    }
+
+    func presentNextScreen() {
+//        present(route: .sheeted)
+    }
+
+    func presentChild() {
+        present(child: SettingsCoordinator())
+    }
+
     deinit {
-        print("Deinit CalculationCoordinator")
+        print("Deinit SettingsCoordinator")
     }
 
 }

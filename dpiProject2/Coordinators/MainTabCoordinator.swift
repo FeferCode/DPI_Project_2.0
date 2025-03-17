@@ -1,17 +1,11 @@
 import Combine
 import SwiftUI
 
-enum MainTabs: Int, CaseIterable {
-    case main
-    case calculator
-    case settings
-    case history
-}
-
 final class MainTabCoordinator: CompositionCoordinator {
 
-    var childCoordinators = [any Coordinator]()
-    var finishDelegate: (any CoordinatorFinishDelegate)?
+    @Published var childCoordinators = [any Coordinator]()
+    @Published var finishDelegate: (any CoordinatorFinishDelegate)?
+    @Published var navigationControllers = [NavigationController<SettingsRoute>]()
 
     @Published var activeTab = MainTabItems.home
 
@@ -71,6 +65,12 @@ final class MainTabCoordinator: CompositionCoordinator {
 
     func setCurrentTab(_ tab: MainTabItems) {
         activeTab = tab
+    }
+
+    // ToDo: Implement the following functions to present Settings Coordinator with CompositionCoordinator
+    func presentSettings() {
+//        childCoordinators.first(as: SettingsCoordinator.self)?.presentChild()
+        childCoordinators.first(as: HomeCoordinator.self)?.presentChild()
     }
 
     func dismissAll() {
