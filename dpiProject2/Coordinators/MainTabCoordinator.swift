@@ -69,7 +69,6 @@ final class MainTabCoordinator: CompositionCoordinator {
 
     // ToDo: Implement the following functions to present Settings Coordinator with CompositionCoordinator
     func presentSettings() {
-//        childCoordinators.first(as: SettingsCoordinator.self)?.presentChild()
         childCoordinators.first(as: HomeCoordinator.self)?.presentChild()
     }
 
