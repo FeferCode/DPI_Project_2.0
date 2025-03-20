@@ -30,6 +30,11 @@
 		605288482A6AC88A0046D829 /* MainTabItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605288472A6AC88A0046D829 /* MainTabItems.swift */; };
 		6075A4102D5C921500F80812 /* DPIAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075A40E2D5C921500F80812 /* DPIAssets.swift */; };
 		6075A4112D5C921500F80812 /* DPIStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075A40F2D5C921500F80812 /* DPIStrings.swift */; };
+		607F50A22D8C3BBB00FF2A48 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607F50A12D8C3BBB00FF2A48 /* View+Extension.swift */; };
+		6080AE8F2D8B41B400F12DEE /* DPITrapezoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6080AE8E2D8B41B400F12DEE /* DPITrapezoid.swift */; };
+		6080AE922D8B512400F12DEE /* DPIRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6080AE912D8B512400F12DEE /* DPIRectangle.swift */; };
+		6080AE942D8B545D00F12DEE /* DPIMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6080AE932D8B545D00F12DEE /* DPIMonitorView.swift */; };
+		6080AE962D8C106100F12DEE /* KeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6080AE952D8C106100F12DEE /* KeyboardToolbar.swift */; };
 		60963D9B2D883CDB00BE61CA /* CalculationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60963D9A2D883CDB00BE61CA /* CalculationCoordinator.swift */; };
 		60963D9D2D883E9B00BE61CA /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60963D9C2D883E9B00BE61CA /* HistoryCoordinator.swift */; };
 		60963D9F2D883EA900BE61CA /* AboutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60963D9E2D883EA900BE61CA /* AboutCoordinator.swift */; };
@@ -76,6 +81,11 @@
 		605288472A6AC88A0046D829 /* MainTabItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabItems.swift; sourceTree = "<group>"; };
 		6075A40E2D5C921500F80812 /* DPIAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPIAssets.swift; sourceTree = "<group>"; };
 		6075A40F2D5C921500F80812 /* DPIStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPIStrings.swift; sourceTree = "<group>"; };
+		607F50A12D8C3BBB00FF2A48 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		6080AE8E2D8B41B400F12DEE /* DPITrapezoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPITrapezoid.swift; sourceTree = "<group>"; };
+		6080AE912D8B512400F12DEE /* DPIRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPIRectangle.swift; sourceTree = "<group>"; };
+		6080AE932D8B545D00F12DEE /* DPIMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPIMonitorView.swift; sourceTree = "<group>"; };
+		6080AE952D8C106100F12DEE /* KeyboardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardToolbar.swift; sourceTree = "<group>"; };
 		60963D9A2D883CDB00BE61CA /* CalculationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationCoordinator.swift; sourceTree = "<group>"; };
 		60963D9C2D883E9B00BE61CA /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
 		60963D9E2D883EA900BE61CA /* AboutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCoordinator.swift; sourceTree = "<group>"; };
@@ -143,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				60A87C002D8773ED00129502 /* Sequence+FirstOfType.swift */,
+				607F50A12D8C3BBB00FF2A48 /* View+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -150,6 +161,7 @@
 		600BED142D5E2B0B009187E5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6080AE952D8C106100F12DEE /* KeyboardToolbar.swift */,
 				60E0CD952D6524B900B4DBC6 /* NavigationSetupModifier.swift */,
 			);
 			path = Helpers;
@@ -166,6 +178,7 @@
 		600BED162D5E7C13009187E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6080AE902D8B50A600F12DEE /* Shapes */,
 				6045D8FF2A696CFD00782914 /* CalculationView.swift */,
 			);
 			path = Views;
@@ -368,6 +381,16 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		6080AE902D8B50A600F12DEE /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				6080AE8E2D8B41B400F12DEE /* DPITrapezoid.swift */,
+				6080AE912D8B512400F12DEE /* DPIRectangle.swift */,
+				6080AE932D8B545D00F12DEE /* DPIMonitorView.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
 		60963DA22D885AB800BE61CA /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6080AE942D8B545D00F12DEE /* DPIMonitorView.swift in Sources */,
 				6045D9042A696D1D00782914 /* AboutView.swift in Sources */,
 				6045D9022A696D0D00782914 /* HistoryView.swift in Sources */,
 				60AE81522A66D5E6000E992F /* PPIProject2App.swift in Sources */,
@@ -555,10 +579,14 @@
 				603D49382A72766700BA88D3 /* TabBarItemColorModifier.swift in Sources */,
 				603AB7B42D87558800E9417B /* NavigationController.swift in Sources */,
 				605288482A6AC88A0046D829 /* MainTabItems.swift in Sources */,
+				6080AE8F2D8B41B400F12DEE /* DPITrapezoid.swift in Sources */,
 				60E0CD902D6505BD00B4DBC6 /* HomeCoordinator.swift in Sources */,
 				60E0CD962D6524BC00B4DBC6 /* NavigationSetupModifier.swift in Sources */,
 				60E0CD942D6511F500B4DBC6 /* MainTabViewModel.swift in Sources */,
+				6080AE962D8C106100F12DEE /* KeyboardToolbar.swift in Sources */,
 				60963D9D2D883E9B00BE61CA /* HistoryCoordinator.swift in Sources */,
+				607F50A22D8C3BBB00FF2A48 /* View+Extension.swift in Sources */,
+				6080AE922D8B512400F12DEE /* DPIRectangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,7 +739,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -741,7 +769,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -25,18 +25,11 @@ struct MainTabView: View {
                 }.navigationBarItems(leading: Button {
                     print("Button tapped")
                     tabCoordinator.presentSettings()
-
                     }label: {
                         Image(systemName: "text.justify")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 30, height: 20)
-                            .clipShape(Rectangle())
-                            .overlay(
-                                Rectangle().stroke(Color.white, lineWidth: 2)
-                                    .cornerRadius(5)
-                            )
-                            .shadow(radius: 2)
                             .foregroundColor(.white)
                     })
 
@@ -44,7 +37,7 @@ struct MainTabView: View {
                     .onReceive(keyboardPublisher) { value in
                         isKeyboardPresented = value
                     }
-            }
+            }.ignoresSafeArea(.keyboard, edges: .all)
         }
     }
 

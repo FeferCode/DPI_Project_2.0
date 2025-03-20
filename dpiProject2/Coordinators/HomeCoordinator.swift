@@ -28,13 +28,9 @@ final class HomeCoordinator: FlowCoordinator {
         .environmentObject(self)
     }
 
-    func pushNextScreen() {
-//        push(route: .pushed)
-    }
+    func pushNextScreen() { }
 
-    func presentNextScreen() {
-//        present(route: .sheeted)
-    }
+    func presentNextScreen() { }
 
     func presentChild() {
         present(child: SettingsCoordinator())
